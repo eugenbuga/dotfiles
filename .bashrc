@@ -13,10 +13,13 @@ esac
 #Powerline settings
 export TERM="xterm-256color"
 
-powerlinde-daemon -q
+powerline-daemon -q
 POWERLINE_BASH_CONTINUATION=1
 POWERLINE_BASH_SELECT=1
 . /usr/local/lib/python3.4/dist-packages/powerline/bindings/bash/powerline.sh
+
+BASE16_SHELL=$HOME/.config/base16-shell/
+[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
 
 HISTCONTROL=ignoreboth
 
