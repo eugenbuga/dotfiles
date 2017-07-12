@@ -28,6 +28,8 @@ git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 # colorschemes for vim
 git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
 
+cd ~/dotfiles/
+
 cp -t ~/ .vimrc .tmux.conf .bashrc
 
 source .bashrc

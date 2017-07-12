@@ -11,10 +11,11 @@ set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/vundle/
 
-call vundle#rc()
+call vundle#begin()
 
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
+Plugin 'valloric/youcompleteme'
 "Plugin 'altercation/vim-colors-solarized'
 
 " colorschemes
